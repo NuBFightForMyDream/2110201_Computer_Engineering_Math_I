@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="บทเรียนเชิงโต้ตอบภาษาไทย 27 บท จากพีชคณิตเชิงเส้นพื้นฐานสู่ควอนตัมคอมพิวติ้ง — Bloch sphere, entanglement, teleportation, Grover, QFT, Shor">
+<meta name="description" content="2110201 Computer Engineering Math I Visualizer for Quantum Computing — บทเรียนเชิงโต้ตอบภาษาไทย 27 บท จากพีชคณิตเชิงเส้นพื้นฐานสู่ควอนตัมคอมพิวติ้ง: Bloch sphere, entanglement, teleportation, Grover, QFT, Shor">
 <style>
 /* reset ที่แพลตฟอร์ม artifact ใส่ให้ตอนแสดงผล — ใส่เองเมื่อโฮสต์เอง */
 :root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -12,7 +12,7 @@ body{margin:0;font:14px system-ui,-apple-system,"Segoe UI",sans-serif;background
 img{max-width:100%}
 [hidden]{display:none!important}
 </style>
-<title>จากเวกเตอร์สู่คิวบิต</title>
+<title>2110201 Computer Engineering Math I Visualizer for Quantum Computing</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap">
@@ -84,6 +84,7 @@ a{color:var(--violet)}
 @media (max-width:520px){.topbar-in{padding-inline:12px;gap:8px}}
 .brand{font-family:var(--disp);font-weight:700;font-size:15px;letter-spacing:.01em;white-space:nowrap;display:flex;align-items:center;gap:8px}
 .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--violet);box-shadow:0 0 0 4px var(--violetFill);flex:none}
+@media (max-width:620px){.brand .bn{display:none}}
 .chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;padding:2px 0}
 .chips::-webkit-scrollbar{display:none}
 .chip{
@@ -323,7 +324,7 @@ footer b{color:var(--ink);font-weight:600}
 <body>
 <div class="topbar">
   <div class="topbar-in">
-    <div class="brand"><span class="dot"></span>เวกเตอร์ → คิวบิต</div>
+    <div class="brand"><span class="dot"></span>2110201<span class="bn"> Visualizer for Quantum Computing</span></div>
     <nav class="chips" id="nav" aria-label="สารบัญบทเรียน"></nav>
     <button class="tgl" id="themeBtn" title="สลับโหมดสว่าง/มืด" aria-label="สลับโหมดสว่าง/มืด">◐</button>
   </div>
@@ -332,7 +333,7 @@ footer b{color:var(--ink);font-weight:600}
 <div class="wrap">
 
 <header class="hero">
-  <div class="eyebrow">บทเรียนเชิงโต้ตอบ · ภาษาไทย</div>
+  <div class="eyebrow">2110201 Computer Engineering Math I · Visualizer for Quantum Computing</div>
   <h1>จากเวกเตอร์<br>สู่<span class="alt">คิวบิต</span></h1>
   <p class="lede">ควอนตัมคอมพิวติ้งไม่ได้เริ่มจากฟิสิกส์ แต่เริ่มจาก<strong>พีชคณิตเชิงเส้น</strong> ถ้าคุณเข้าใจสามอย่างนี้ — เวกเตอร์หนึ่งหน่วย, ฐานตั้งฉาก, และเมทริกซ์ที่ไม่บิดเบือนความยาว — คุณก็เข้าใจคิวบิต การวัด และประตูควอนตัมไปแล้วเกินครึ่ง หน้านี้ไล่ทีละขั้นจากศูนย์ พร้อมของเล่นให้ลากเล่นในทุกหัวข้อ</p>
 
